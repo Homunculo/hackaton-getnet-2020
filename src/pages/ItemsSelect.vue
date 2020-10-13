@@ -119,7 +119,7 @@ export default {
       firebase.database().ref('ordens/' + IdOrdem + '/' + this.descricao_2).set({
         quantidade: this.qnt_2
       })
-      window.location.replace('/')
+      this.$router.push('/')
     }
   }
 }
